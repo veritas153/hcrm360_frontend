@@ -3,7 +3,7 @@
 ### 1. 개요
 
 가정교회360 목장 보고용 웹 사이트 내 프런트엔드 입니다.  
-API는 [여기](https://github.com/veritas153/hcrm360)를 참조해주세요.
+API는 [여기](https://github.com/veritas153/hcrm360_api)를 참조해주세요.
 
 이 프런트엔드는 아래의 기술 스택을 바탕으로 작성되었습니다.
 
