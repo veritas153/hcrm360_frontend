@@ -1,64 +1,24 @@
-# Nuxt Dashboard Template
+# 가정교회360 프런트엔드
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+### 1. 개요
 
-Get started with the Nuxt dashboard template with multiple pages, collapsible sidebar, keyboard shortcuts, light & dark mode, command palette and more, powered by [Nuxt UI](https://ui.nuxt.com).
+가정교회360 목장 보고용 웹 사이트 내 프런트엔드 입니다.  
+API는 [여기](https://github.com/veritas153/hcrm360)를 참조해주세요.
 
-- [Live demo](https://dashboard-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+이 프런트엔드는 아래의 기술 스택을 바탕으로 작성되었습니다.
 
-<a href="https://dashboard-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/dashboard-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/dashboard-light.png">
-    <img alt="Nuxt Dashboard Template" src="https://ui.nuxt.com/assets/templates/nuxt/dashboard-light.png">
-  </picture>
-</a>
+* node.js 24
+* vue.js 3.5.29
+* Nuxt 4.3.1
 
-> The dashboard template for Vue is on https://github.com/nuxt-ui-templates/dashboard-vue.
+### 2. 사용 템플릿
 
-## Quick Start
+본 프로젝트는 [Nuxt Dashboard Template](https://github.com/nuxt-ui-templates/dashboard)를 바탕으로 개발 되었습니다.  
 
-```bash [Terminal]
-npm create nuxt@latest -- -t ui/dashboard
-```
+### 3. 오픈 소스
 
-## Deploy your own
+본 프로젝트는 아래에 명시된 오픈 소스를 사용했음을 밝힙니다.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=dashboard&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fdashboard&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fdashboard-dark.png&demo-url=https%3A%2F%2Fdashboard-template.nuxt.dev%2F&demo-title=Nuxt%20Dashboard%20Template&demo-description=A%20dashboard%20template%20with%20multi-column%20layout%20for%20building%20sophisticated%20admin%20interfaces.)
+* [Tiptap Editor](https://tiptap.dev/product/editor)
+* 
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
