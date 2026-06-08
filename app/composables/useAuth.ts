@@ -6,10 +6,14 @@ export const useAuth = () => {
       const data = await $fetch<{ id: number; userName: string }>(
         '/api/v1/auth/session', 
         { credentials: 'include' })
-      sessionUser.value = data
-    } catch {
+      
+        sessionUser.value = data
+    
+      } catch {
       sessionUser.value = null
+    
     }
+  
   }
 
   const login = async (credentials: { username: string; password: string }) => {
@@ -18,11 +22,14 @@ export const useAuth = () => {
       method: 'POST',
       body: credentials,
       credentials: 'include', // 세션 쿠키 수신을 위해 필수
+    
     })
+    
     await fetchSession()
 
     if (sessionUser.value) {
       return navigateTo('/')
+    
     }
 
   }
@@ -30,8 +37,11 @@ export const useAuth = () => {
   const logout = async () => {
     await $fetch('/api/v1/auth/logout', { method: 'POST', credentials: 'include' })
     sessionUser.value = null
+    
     return navigateTo('/login')
+  
   }
 
   return { sessionUser, fetchSession, login, logout }
+
 }
