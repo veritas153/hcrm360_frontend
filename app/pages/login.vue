@@ -24,17 +24,22 @@ const toast = useToast()
 async function onSubmit(event: FormSubmitEvent<any>) {
   loading.value = true
   error.value = ''
+
   try {
     await login(state)
+  
   } catch (e: any) {
     toast.add({
       title: '로그인 오류',
       description: '입력한 계정이 존재하지 않습니다.',
       color: 'error'
+  
     })
   } finally {
     loading.value = false
+  
   }
+
 }
 </script>
 
